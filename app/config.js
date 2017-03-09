@@ -11,6 +11,7 @@ var db = require('bookshelf')(knex);
 // another comment for tests.
 // changed at 5:13pm PST
 // changed at 5:24pm PST
+// changed at 7:07pm PST
 db.knex.schema.hasTable('urls').then(function(exists) {
   if (!exists) {
     db.knex.schema.createTable('urls', function (link) {
