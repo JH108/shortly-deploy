@@ -9,6 +9,7 @@ var knex = require('knex')({
 var db = require('bookshelf')(knex);
 // added comment for test purposes.
 // another comment for tests.
+// changed at 5:13pm PST
 db.knex.schema.hasTable('urls').then(function(exists) {
   if (!exists) {
     db.knex.schema.createTable('urls', function (link) {
